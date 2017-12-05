@@ -24,7 +24,6 @@ import org.baeldung.spring.UserRepository;
 //import java.util.List;
 
 @Controller
-@RequestMapping("signup")
 public class UserController {
 
 	@Autowired
@@ -33,20 +32,27 @@ public class UserController {
 	@Autowired
 	UserRepository repository;
 	
+	@RequestMapping("/")
+	String login() {
+		return "signup";
+	}
 	
 	
 	//“o˜^
-	@GetMapping
+	@GetMapping("/signup")
     public String signup(Model model) {
         model.addAttribute("userForm", new UserForm());
         return "signup";
     }
 	
-	@PostMapping
+	@PostMapping("/signup")
     public String signupPost(Model model, @Valid UserForm userForm, BindingResult bindingResult, HttpServletRequest request) {
 		userService.registerUser(userForm.getNo(),userForm.getUserid(), userForm.getUsername(),userForm.getOrgname(),userForm.getPassword(),"1","USER");
 		return "signup";
 	}
+	
+	
+
 		
 	
 }
