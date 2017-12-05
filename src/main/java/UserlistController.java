@@ -28,8 +28,8 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.http.HttpStatus;
 
 
-import com.example.sample.UserService;
-import com.example.sample.UserRepository;
+import main.java.UserService;
+import main.java.UserRepository;
 
 import java.util.List;
 

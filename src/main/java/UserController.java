@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 //import org.springframework.validation.BindingResult;
 //import org.springframework.validation.annotation.Validated;
 
-import com.example.sample.UserService;
-import com.example.sample.UserRepository;
+import main.java.UserService;
+import main.java.UserRepository;
 
 //import java.util.List;
 

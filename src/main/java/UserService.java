@@ -3,7 +3,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-import com.example.sample.User;
+import main.java.User;
 
 
 @Service
